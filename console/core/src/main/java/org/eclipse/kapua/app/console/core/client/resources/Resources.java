@@ -19,10 +19,15 @@ public interface Resources extends ClientBundleWithLookup {
 
     Resources INSTANCE = GWT.create(Resources.class);
 
-    @Source("org/eclipse/kapua/app/client/resources/html/documentation.html")
+//    @Source("org/eclipse/kapua/app/client/resources/html/documentation.html")
+//    TextResource documentationHtml();
+//
+//    @Source("org/eclipse/kapua/app/client/resources/html/devices.html")
+//    TextResource devicesHtml();
+    @Source("org/eclipse/kapua/app/console/core/client/resources/html/documentation.html")
     TextResource documentationHtml();
 
-    @Source("org/eclipse/kapua/app/client/resources/html/devices.html")
+    @Source("org/eclipse/kapua/app/console/core/client/resources/html/devices.html")
     TextResource devicesHtml();
 
 }
